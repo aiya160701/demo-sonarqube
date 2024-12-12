@@ -1,5 +1,7 @@
 pipeline {
-	agent any
+	agent {
+		label: sonar-agent
+	}
 	tools {
 		nodejs 'NodeJS'
 	}
